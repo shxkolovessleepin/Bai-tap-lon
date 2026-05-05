@@ -1,9 +1,9 @@
 package com.auction.model;
 
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 public abstract class Item extends Entity {
-    public static int countItem = 0;
     protected String name;
     protected double startPrice;
     protected double currentPrice;
@@ -40,6 +40,9 @@ public abstract class Item extends Entity {
     }
     public LocalDateTime getEndTime() {
         return endTime;
+    }
+    public String setId() {
+        return "ITEM-" + UUID.randomUUID().toString();
     }
     abstract public void getInfo();
 }

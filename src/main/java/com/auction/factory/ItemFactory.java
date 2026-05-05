@@ -12,7 +12,7 @@ public class ItemFactory {
                 return new Vehicle(name, startingPrice);
             default:
                 try {
-                    throw new IllegalAccessException("Loại sản phẩm không hợp lệ: " + type);
+                    throw new IllegalAccessException("Illegal item's type: " + type);
                 } catch (IllegalAccessException e) {
                     throw new RuntimeException(e);
                 }
