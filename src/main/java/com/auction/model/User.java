@@ -1,5 +1,7 @@
 package com.auction.model;
 
+import java.util.UUID;
+
 public abstract class User extends Entity {
     protected String username;
     protected String email;
@@ -15,5 +17,7 @@ public abstract class User extends Entity {
 
     public void setUsername(String newName) {this.username = newName;}
     public void setEmail(String newEmail) {this.email = newEmail;}
-
+    public String setId() {
+        return "USER-" + UUID.randomUUID().toString();
+    }
 }

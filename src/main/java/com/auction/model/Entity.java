@@ -6,10 +6,10 @@ public abstract class Entity {
     protected String id;
 
     public Entity() {
-        this.id = UUID.randomUUID().toString();
+        this.id = setId();
     }
-
+    abstract public String setId();
     public String getId() {
-        return  id;
+        return id;
     }
 }
