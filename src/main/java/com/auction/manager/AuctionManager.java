@@ -4,7 +4,7 @@ public class AuctionManager {
     private static AuctionManager instance;
 
     private AuctionManager() {
-        System.out.println("Hệ thống quản lý đấu giá được khởi tạo");
+        System.out.println("The auction management system has been initiated.");
     }
 
     public static AuctionManager getInstance() {
