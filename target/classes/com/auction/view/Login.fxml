@@ -46,6 +46,6 @@
             <Font size="18.0" />
          </font>
       </PasswordField>
-      <Button fx:id="level" layoutX="498.0" layoutY="510.0" mnemonicParsing="false" onAction="#tooglePassword" style="-fx-background-color: transparent;" text="Show" textFill="#02fdba" />
+      <Button fx:id="lever" layoutX="498.0" layoutY="510.0" mnemonicParsing="false" onAction="#tooglePassword" style="-fx-background-color: transparent;" text="Show" textFill="#02fdba" />
    </children>
 </AnchorPane>
