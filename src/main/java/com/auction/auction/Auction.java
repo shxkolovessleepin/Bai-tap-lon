@@ -9,7 +9,6 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class Auction {
     private Item item;
-    private double currentHighestPrice;
     private BidTransaction winningBid;
     private AuctionState state;
 
@@ -54,8 +53,8 @@ public class Auction {
         }
         lock.lock();
         try {
-            if (bidAmount > currentHighestPrice) {
-                currentHighestPrice = bidAmount;
+            if (bidAmount > item.getCurrentPrice()) {
+                item.setCurrentPrice(bidAmount);
                 winningBid = new BidTransaction(bidderName, bidAmount);
 
                 notifyObservers(bidAmount, bidderName);
