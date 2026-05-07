@@ -50,4 +50,9 @@ public class SignUpController {
     private void loginAction(ActionEvent event) {
         SceneUtil.changeScene(event, "/com/auction/view/Login.fxml");
     }
+
+    @FXML
+    private void signUpAction(ActionEvent event) {
+        SceneUtil.changeScene(event, "/com/auction/view/AuctionMenu.fxml");
+    }
 }

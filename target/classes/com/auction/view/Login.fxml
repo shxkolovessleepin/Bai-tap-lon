@@ -14,7 +14,7 @@
             <Font size="48.0" />
          </font>
       </Label>
-      <Button layoutX="150.0" layoutY="584.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="300.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #02fdba;" text="Login">
+      <Button layoutX="150.0" layoutY="584.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="60.0" prefWidth="300.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #02fdba;" text="Login">
          <font>
             <Font size="18.0" />
          </font>
@@ -46,6 +46,6 @@
             <Font size="18.0" />
          </font>
       </PasswordField>
-      <Button fx:id="level" layoutX="498.0" layoutY="510.0" mnemonicParsing="false" onAction="#tooglePassword" style="-fx-background-color: transparent;" text="Show" textFill="#02fdba" />
+      <Button fx:id="lever" layoutX="498.0" layoutY="510.0" mnemonicParsing="false" onAction="#tooglePassword" style="-fx-background-color: transparent;" text="Show" textFill="#02fdba" />
    </children>
 </AnchorPane>
