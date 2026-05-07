@@ -4,11 +4,13 @@ import java.util.UUID;
 
 public abstract class User extends Entity {
     protected String username;
+    protected String password;
     protected String email;
 
-    public User(String username, String email) {
+    public User(String username, String password, String email) {
         super();
         this.username = username;
+        this.password = password;
         this.email = email;
     }
 
@@ -16,6 +18,7 @@ public abstract class User extends Entity {
     public String getEmail() { return email; }
 
     public void setUsername(String newName) {this.username = newName;}
+    public void setPassword(String newPassword) {this.password = newPassword;}
     public void setEmail(String newEmail) {this.email = newEmail;}
     public String setId() {
         return "USER-" + UUID.randomUUID().toString();
